@@ -20,6 +20,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=Prisma
+    volumes:
+      - dbmysql:/var/lib/mysql
     networks:
       - net
 
