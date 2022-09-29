@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  app:
+    container_name: app
+    build: .
+    ports:
+      - 5555:5555
+    depends_on:
+      - mysql-app
+    networks:
+      - net
+
+  mysql-app:
+    container_name: mysql-app
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=Prisma
+    networks:
+      - net
+
+networks:
+  net:
+    driver: bridge
