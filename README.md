@@ -12,7 +12,7 @@ git clone  https://github.com/Johnson49/docker-compose-com-prismaORM-e-mySQL.git
 cd docker-compose-com-prismaORM-e-mySQL
 ```
 
-### Execute o build e iniciar os contêineres
+### Execute o build e inicie os contêineres
 
 ```docker
 docker compose up --build -d
