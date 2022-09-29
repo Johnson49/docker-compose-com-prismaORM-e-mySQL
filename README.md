@@ -18,7 +18,7 @@ cd docker-compose-com-prismaORM-e-mySQL
 docker compose up --build -d
 ```
 
-Caso não possua o docker compose na versão 2, para executa-lo em vez de   `docker compose` use `docker-compose`.
+Caso não possua o docker compose na versão 2, em vez de `docker compose` use `docker-compose`.
 
 ### Execute as migrates
 
